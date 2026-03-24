@@ -1,1 +1,57 @@
- 
+->AI Ready School — Homepage Redesign
+
+Live: [Vercel link here]  
+Repo: [GitHub link here]
+
+Audit: Top 5 UX Problems Identified:
+1. Navigation overload 
+The current nav has two mega-menus that collectively expose 15+ links on hover. A school principal visiting for the first time immediately faces decision paralysis. There's no clear primary action visible in the nav itself.
+
+2. Hero CTA is too low-commitment  
+"See if Your School is AI Ready" is a long-form assessment flow — not the right first ask for a skeptical buyer. It delays the sales conversation instead of opening it. There's no direct "Book a Demo" as the hero's primary CTA.
+
+3. Product section has no scannability
+Five products are presented in long, alternating-column rows. Each block requires scrolling to read. A principal can't rapidly understand what the five products are and why they matter — which is the job this section needs to do.
+
+4. Social proof is too narrow
+8 out of 8 testimonials on the homepage are from schools in Raipur (mostly the same school). To a principal in Mumbai, Bangalore, or Delhi, this reads as a regional/niche product, not a trusted national platform. This undermines credibility at the worst moment.
+
+5. Stats section shows "0+" and "0%" 
+The counter animations fail to load in many environments, showing literal zeros. A trust section that displays "0+ projects" and "0% client satisfaction" is actively harmful.
+
+---
+
+What I Prioritized:
+- Navigation — Reduced to 5 clear links + 2 actions. No mega-menus. Sticky with blur effect on scroll.
+- Hero — Leading headline that speaks to the outcome ("Your school, fully AI-ready"), two CTAs with clear hierarchy (Book Demo > See Products), and inline stats that work without JS.
+- Products — Card grid with color coding per product, scannable in under 10 seconds, expandable with "Learn more" links.
+- Why section — Four focused differentiators that address real school buyer objections (no coding, responsible AI, whole-school view).
+- Testimonials — Same testimonials, but better visual layout and de-emphasized repetitive school names.
+- CTA — Clean closing section with both conversion actions.
+
+---
+
+Design Decisions:
+
+- Dark theme — Positions AI Ready School as a serious tech platform, not a generic edtech SaaS. Schools evaluating AI adoption respond well to premium, credible aesthetics.
+- Syne + DM Sans — Syne is architectural and distinctive for headings; DM Sans is warm and readable for body copy. Avoids generic edtech feel (Poppins, Inter, etc.)
+- Accent color: #00D4A0 — Teal-green signals growth, intelligence, and forward-thinking. Not the typical blue/purple of corporate edtech.
+- Product grid — 3-2 layout so all 5 products are above the fold on desktop without overwhelming. Color accent per product helps differentiation.
+- Hero card visual** — Shows Cypher in action, communicates the product is a guided conversation, not a chatbot that gives away answers.
+
+---
+
+What I'd Do With More Time:
+1. Add a school logos strip with real diverse client logos to fix the narrow social proof problem
+2. Build the AI Readiness Assessment flow as a multi-step interactive section (huge conversion opportunity)
+3. Add a short demo video or animated product walkthrough to the hero
+4. Animate the product cards with a hover preview of each product's UI
+5. Add a comparison table ("AI Ready School vs. just using ChatGPT") — a real objection to address
+6. Testimonials with school diversity — source quotes from metro cities to broaden perceived reach
+
+---
+
+Stack:
+- Vanilla HTML, CSS, JavaScript — no build step, instant deploy
+- Google Fonts: Syne + DM Sans
+- No external dependencies 
