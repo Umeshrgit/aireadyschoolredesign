@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>AI Ready School — India's Complete AI Ecosystem for Schools</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#" class="nav__logo">
+      <div class="logo__icon">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+          <path d="M10 2L18 7V13L10 18L2 13V7L10 2Z" stroke="#00d4a0" stroke-width="1.5" fill="rgba(0,212,160,0.12)"/>
+          <circle cx="10" cy="10" r="2.5" fill="#00d4a0"/>
+        </svg>
+      </div>
+      <span class="logo__text">AI<span class="logo__accent">Ready</span>School</span>
+    </a>
+
+    <nav class="nav__links">
+      <a href="#products" class="nav__link">Products</a>
+      <a href="#why" class="nav__link">Why Us</a>
+      <a href="#testimonials" class="nav__link">Stories</a>
+      <a href="https://www.aireadyschool.com/pricing" target="_blank" class="nav__link">Pricing</a>
+      <a href="https://www.aireadyschool.com/blog" target="_blank" class="nav__link">Blog</a>
+    </nav>
+
+    <div class="nav__actions">
+      <a href="https://app.aireadyschool.com/sign-in" target="_blank" class="btn btn--ghost">Sign In</a>
+      <a href="https://www.aireadyschool.com/demo" target="_blank" class="btn btn--glow">Book Demo →</a>
+    </div>
+
+    <button class="nav__hamburger" id="hamburger"><span></span><span></span></button>
+  </div>
+  <div class="nav__mobile" id="mobileMenu">
+    <a href="#products">Products</a>
+    <a href="#why">Why Us</a>
+    <a href="#testimonials">Stories</a>
+    <a href="https://www.aireadyschool.com/pricing" target="_blank">Pricing</a>
+    <a href="https://app.aireadyschool.com/sign-in" target="_blank">Sign In</a>
+    <a href="https://www.aireadyschool.com/demo" target="_blank" class="btn btn--glow" style="text-align:center;margin-top:8px;">Book Demo →</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero__bg">
+    <div class="bg__noise"></div>
+    <div class="bg__grid"></div>
+    <div class="bg__glow bg__glow--1"></div>
+    <div class="bg__glow bg__glow--2"></div>
+    <div class="bg__glow bg__glow--3"></div>
+    <div class="bg__lines"></div>
+  </div>
+
+  <div class="hero__wrap">
+    <div class="hero__left">
+      <div class="hero__eyebrow">
+        <span class="eyebrow__ping"></span>
+        India's First Complete AI Ecosystem for Schools
+      </div>
+
+      <h1 class="hero__h1">
+        <span class="h1__row">Transform</span>
+        <span class="h1__row">your school</span>
+        <span class="h1__row h1__row--accent">with <em>AI.</em></span>
+      </h1>
+
+      <p class="hero__desc">
+        Five purpose-built AI products for students, teachers, and administrators — forming one complete ecosystem. Trusted by schools across India.
+      </p>
+
+      <div class="hero__btns">
+        <a href="https://www.aireadyschool.com/demo" target="_blank" class="btn btn--cta">
+          Book a Free Demo
+          <span class="btn__arr">→</span>
+        </a>
+        <a href="#products" class="btn btn--outline-hero">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1.3"/><path d="M6.5 5.5l4 2.5-4 2.5V5.5z" fill="currentColor"/></svg>
+          See Products
+        </a>
+      </div>
+
+      <div class="hero__metrics">
+        <div class="met">
+          <strong>10K+</strong>
+          <span>Students & Teachers</span>
+        </div>
+        <div class="met__div"></div>
+        <div class="met">
+          <strong>30+</strong>
+          <span>AI Tools</span>
+        </div>
+        <div class="met__div"></div>
+        <div class="met">
+          <strong>K–12</strong>
+          <span>All Grades</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__right">
+      <div class="scene" id="scene">
+
+        <!-- Main 3D card -->
+        <div class="card card--main" id="mainCard">
+          <div class="card__inner">
+            <div class="card__shine" id="cardShine"></div>
+            <div class="card__hdr">
+              <div class="card__dots">
+                <i class="cdot cdot--r"></i>
+                <i class="cdot cdot--y"></i>
+                <i class="cdot cdot--g"></i>
+              </div>
+              <span>Cypher · AI Learning Companion</span>
+              <span class="card__live"><i></i>Live</span>
+            </div>
+            <div class="card__kpis">
+              <div class="kpi"><b>94%</b><small>Engagement</small></div>
+              <div class="kpi"><b>3×</b><small>Faster</small></div>
+              <div class="kpi"><b>K–12</b><small>All grades</small></div>
+            </div>
+            <div class="card__chat">
+              <div class="cmsg cmsg--ai">
+                <div class="cmsg__av">AI</div>
+                <div class="cmsg__bub">When two equal forces oppose each other, what happens? Think first. 🤔</div>
+              </div>
+              <div class="cmsg cmsg--u">
+                <div class="cmsg__bub">They cancel out completely!</div>
+                <div class="cmsg__av cmsg__av--u">S</div>
+              </div>
+              <div class="cmsg cmsg--ai">
+                <div class="cmsg__av">AI</div>
+                <div class="cmsg__bub">Correct! That's Newton's 3rd Law. What if one force is stronger? ✨</div>
+              </div>
+            </div>
+            <div class="card__inp">
+              <span>Ask Cypher anything...</span>
+              <button class="card__send">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M11 1L5 7M11 1L7.5 11L5 7L1 4.5L11 1Z" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Floating badges -->
+        <div class="fbadge fbadge--1">
+          <span class="fbadge__ico">🏫</span>
+          <div><strong>50+ Schools</strong><small>Across India</small></div>
+        </div>
+
+        <div class="fbadge fbadge--2">
+          <span class="fbadge__ico">⚡</span>
+          <div><strong>Live in 2 weeks</strong><small>Full onboarding</small></div>
+        </div>
+
+        <div class="fbadge fbadge--3">
+          <div class="fbar">
+            <div class="fbar__fill"></div>
+          </div>
+          <small>Student progress · Grade 8A</small>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products" id="products">
+  <div class="container">
+    <div class="sec-hd">
+      <div class="stag">The Ecosystem</div>
+      <h2 class="stitle">Five products. <em>One transformation.</em></h2>
+      <p class="sdesc">Each product solves a distinct challenge. Together they make your school completely AI-powered.</p>
+    </div>
+
+    <div class="pgrid">
+      <div class="pcard" style="--ac:#22d3ee">
+        <div class="pcard__glow"></div>
+        <span class="pcard__for">For Students</span>
+        <div class="pcard__ico">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="8" r="4" stroke="currentColor" stroke-width="1.8"/><path d="M4 20c0-3.87 3.13-7 7-7s7 3.13 7 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Cypher</h3>
+        <p class="pcard__role">Learning Companion</p>
+        <p class="pcard__desc">Guides students to think deeply — not just get answers. Personalised for each learner's pace and style.</p>
+        <ul><li>Socratic teaching method</li><li>Multi-model AI orchestration</li><li>Responsible AI guardrails</li></ul>
+        <a href="https://www.aireadyschool.com/cypher" target="_blank">Learn more →</a>
+      </div>
+
+      <div class="pcard" style="--ac:#a78bfa">
+        <div class="pcard__glow"></div>
+        <span class="pcard__for">For Teachers</span>
+        <div class="pcard__ico">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><rect x="2" y="4" width="18" height="13" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M7 18h8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Morpheus</h3>
+        <p class="pcard__role">AI Teaching Agent</p>
+        <p class="pcard__desc">Automates lesson plans, assessments, and insights so teachers focus on students, not paperwork.</p>
+        <ul><li>Complete lesson packages in minutes</li><li>AI-powered assessments</li><li>Deep student insights</li></ul>
+        <a href="https://www.aireadyschool.com/morpheus" target="_blank">Learn more →</a>
+      </div>
+
+      <div class="pcard" style="--ac:#fbbf24">
+        <div class="pcard__glow"></div>
+        <span class="pcard__for">For Everyone</span>
+        <div class="pcard__ico">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M5 6h12M5 11h8M5 16h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Zion</h3>
+        <p class="pcard__role">AI Tool Suite</p>
+        <p class="pcard__desc">30+ AI tools for learning, creation, research and projects — all in one safe school platform.</p>
+        <ul><li>Image, video & audio AI tools</li><li>Research & writing assistants</li><li>Safe & structured for students</li></ul>
+        <a href="https://www.aireadyschool.com/zion" target="_blank">Learn more →</a>
+      </div>
+
+      <div class="pcard" style="--ac:#4ade80">
+        <div class="pcard__glow"></div>
+        <span class="pcard__for">Physical + Digital</span>
+        <div class="pcard__ico">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><rect x="2" y="3" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M3 16l4-4 3 3 4-5 5 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>NEO</h3>
+        <p class="pcard__role">AI Innovation Lab</p>
+        <p class="pcard__desc">A futuristic AI lab at your school. Robotics, XR, and hands-on projects that build real AI skills.</p>
+        <ul><li>Latest AI devices & hardware</li><li>Project-based curriculum</li><li>AI, robotics & XR tools</li></ul>
+        <a href="https://www.aireadyschool.com/neo" target="_blank">Learn more →</a>
+      </div>
+
+      <div class="pcard" style="--ac:#fb7185">
+        <div class="pcard__glow"></div>
+        <span class="pcard__for">Infrastructure</span>
+        <div class="pcard__ico">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><rect x="2" y="6" width="18" height="4" rx="1" stroke="currentColor" stroke-width="1.8"/><rect x="2" y="13" width="18" height="4" rx="1" stroke="currentColor" stroke-width="1.8"/><circle cx="17" cy="8" r="1" fill="currentColor"/><circle cx="17" cy="15" r="1" fill="currentColor"/></svg>
+        </div>
+        <h3>Matrix</h3>
+        <p class="pcard__role">AI Infrastructure</p>
+        <p class="pcard__desc">Local AI servers, models, and classroom monitoring. Your school owns its AI — privately and securely.</p>
+        <ul><li>On-premise AI servers</li><li>AI-powered surveillance</li><li>Full school connectivity</li></ul>
+        <a href="https://www.aireadyschool.com/matrix" target="_blank">Learn more →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="why" id="why">
+  <div class="container">
+    <div class="why__layout">
+      <div class="why__lft">
+        <div class="stag">Why AI Ready School?</div>
+        <h2 class="stitle" style="text-align:left">Built for schools.<br/><em>Not retrofitted.</em></h2>
+        <p class="sdesc" style="text-align:left;max-width:380px">Most AI tools are enterprise products bolted onto education. We built every layer — curriculum, safety, infrastructure — specifically for how schools work.</p>
+        <a href="https://www.aireadyschool.com/why-ai-ready-school" target="_blank" class="btn btn--glow" style="margin-top:28px;width:fit-content">See Full Platform →</a>
+      </div>
+      <div class="why__rgt">
+        <div class="wcards">
+          <div class="wcard"><span>01</span><h4>Responsible AI by Design</h4><p>Guardrails that encourage honest thinking, not shortcut answers.</p></div>
+          <div class="wcard"><span>02</span><h4>No Coding Required</h4><p>Teachers and students use it from day one. Zero technical setup.</p></div>
+          <div class="wcard"><span>03</span><h4>Integrated Ecosystem</h4><p>Five products sharing data — a whole-school view, not siloed tools.</p></div>
+          <div class="wcard"><span>04</span><h4>Supported Rollout</h4><p>Workshops and ongoing support so your staff is confident, not confused.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <div class="sec-hd">
+      <div class="stag">Real Stories</div>
+      <h2 class="stitle">What schools are <em>saying</em></h2>
+    </div>
+    <div class="tgrid">
+      <div class="tcard">
+        <div class="tcard__stars">★★★★★</div>
+        <p>"The AI-Ready School App is a game-changer. It simplifies lesson planning and assignment generation while helping us create engaging content that makes complex topics easier to teach."</p>
+        <div class="tcard__who"><div class="tcard__av">MS</div><div><strong>Mansi Sharma</strong><small>TGT English · NH Goel World School</small></div></div>
+      </div>
+      <div class="tcard tcard--hl">
+        <div class="tcard__stars">★★★★★</div>
+        <p>"AI Ready School is a one-stop solution integrating multiple AI-powered tools. It streamlines test papers, answer keys, and lesson plans. The YouTube summary generator is especially useful."</p>
+        <div class="tcard__who"><div class="tcard__av">JA</div><div><strong>Jayesh Agrawal</strong><small>PGT Physics · Brighton International School</small></div></div>
+      </div>
+      <div class="tcard">
+        <div class="tcard__stars">★★★★★</div>
+        <p>"It lets me create personalised lesson plans with worksheets and video links — all tailored to the number of days I need. Like having multiple search engines in one smart assistant."</p>
+        <div class="tcard__who"><div class="tcard__av">ST</div><div><strong>Shraddha Tripathy</strong><small>Primary Math · NH Goel World School</small></div></div>
+      </div>
+      <div class="tcard">
+        <div class="tcard__stars">★★★★★</div>
+        <p>"The platform reduced time I spend on lesson planning and evaluations. It lets me create personalised, interactive visuals that make science far more engaging for students."</p>
+        <div class="tcard__who"><div class="tcard__av">VN</div><div><strong>Vrishali Nalte</strong><small>TGT Science · NH Goel World School</small></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-sec">
+  <div class="container">
+    <div class="cta-sec__box">
+      <div class="cta-sec__bg">
+        <div class="ctabg__orb ctabg__orb--1"></div>
+        <div class="ctabg__orb ctabg__orb--2"></div>
+        <div class="ctabg__grid"></div>
+      </div>
+      <div class="cta-sec__body">
+        <div class="stag">Get Started Today</div>
+        <h2>Ready to make your school<br/><em>truly AI Ready?</em></h2>
+        <p>Book a free demo and see how your school can adopt AI responsibly and effectively — in weeks, not years.</p>
+        <div class="cta-sec__btns">
+          <a href="https://www.aireadyschool.com/demo" target="_blank" class="btn btn--cta">Book a Free Demo <span class="btn__arr">→</span></a>
+          <a href="https://www.aireadyschool.com/ai-readiness-assessment-for-schools" target="_blank" class="btn btn--outline-hero">Take AI Readiness Assessment</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <div class="nav__logo" style="margin-bottom:14px">
+          <div class="logo__icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2L18 7V13L10 18L2 13V7L10 2Z" stroke="#00d4a0" stroke-width="1.5" fill="rgba(0,212,160,0.12)"/><circle cx="10" cy="10" r="2.5" fill="#00d4a0"/></svg></div>
+          <span class="logo__text">AI<span class="logo__accent">Ready</span>School</span>
+        </div>
+        <p>India's first complete AI ecosystem for K–12 schools. Helping schools adopt AI responsibly.</p>
+      </div>
+      <div class="footer__cols">
+        <div class="fcol"><h5>Products</h5><a href="https://www.aireadyschool.com/cypher" target="_blank">Cypher</a><a href="https://www.aireadyschool.com/morpheus" target="_blank">Morpheus</a><a href="https://www.aireadyschool.com/zion" target="_blank">Zion</a><a href="https://www.aireadyschool.com/neo" target="_blank">NEO</a><a href="https://www.aireadyschool.com/matrix" target="_blank">Matrix</a></div>
+        <div class="fcol"><h5>Company</h5><a href="https://www.aireadyschool.com/about-us" target="_blank">About Us</a><a href="https://www.aireadyschool.com/blog" target="_blank">Blog</a><a href="https://www.aireadyschool.com/pricing" target="_blank">Pricing</a><a href="https://www.aireadyschool.com/our-partners" target="_blank">Our Clients</a><a href="https://www.aireadyschool.com/contact-us" target="_blank">Contact</a></div>
+        <div class="fcol"><h5>Resources</h5><a href="https://www.aireadyschool.com/ai-readiness-assessment-for-schools" target="_blank">AI Readiness Check</a><a href="https://www.aireadyschool.com/teacher-workshop" target="_blank">Teacher Workshops</a><a href="https://www.aireadyschool.com/ai-clubs" target="_blank">AI Clubs</a><a href="https://www.aireadyschool.com/faqs" target="_blank">FAQs</a><a href="https://www.aireadyschool.com/become-a-partner" target="_blank">Become a Partner</a></div>
+      </div>
+    </div>
+    <div class="footer__btm">
+      <span>© 2025 Learnia.AI · All rights reserved</span>
+      <a href="https://www.aireadyschool.com/privacy-policy" target="_blank">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
