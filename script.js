@@ -1,8 +1,3 @@
-/* =============================================
-   AI Ready School — Interactions & 3D Effects
-   ============================================= */
-
-// ---- Custom Cursor ----
 const cursor = document.getElementById('cursor');
 let mx = -100, my = -100, cx = -100, cy = -100;
 
@@ -16,20 +11,18 @@ document.addEventListener('mousemove', e => {
   if (cursor) cursor.style.transform = `translate(${cx - 5}px, ${cy - 5}px)`;
   requestAnimationFrame(animCursor);
 })();
-
-// Cursor scale on hover
 document.querySelectorAll('a, button, .pcard, .wcard, .tcard').forEach(el => {
   el.addEventListener('mouseenter', () => { if(cursor) cursor.style.transform += ' scale(2.5)'; cursor && (cursor.style.opacity='0.5'); });
   el.addEventListener('mouseleave', () => { cursor && (cursor.style.opacity='1'); });
 });
 
-// ---- Nav scroll ----
+
 const nav = document.getElementById('nav');
 window.addEventListener('scroll', () => {
   nav.classList.toggle('scrolled', window.scrollY > 20);
 }, { passive: true });
 
-// ---- Mobile menu ----
+
 const hamburger = document.getElementById('hamburger');
 const mobileMenu = document.getElementById('mobileMenu');
 hamburger.addEventListener('click', () => {
@@ -39,7 +32,7 @@ mobileMenu.querySelectorAll('a').forEach(a => {
   a.addEventListener('click', () => mobileMenu.classList.remove('open'));
 });
 
-// ---- 3D Card Tilt on mouse move ----
+
 const scene = document.getElementById('scene');
 const mainCard = document.querySelector('.card--main');
 const cardShine = document.querySelector('.card__shine');
@@ -47,12 +40,12 @@ const cardShine = document.querySelector('.card__shine');
 if (scene && mainCard) {
   scene.addEventListener('mousemove', e => {
     const rect = scene.getBoundingClientRect();
-    const x = (e.clientX - rect.left) / rect.width;   // 0–1
-    const y = (e.clientY - rect.top) / rect.height;    // 0–1
-    const rotY = (x - 0.5) * 20;   // -10 to +10 deg
-    const rotX = (0.5 - y) * 12;   // -6 to +6 deg
+    const x = (e.clientX - rect.left) / rect.width;   
+    const y = (e.clientY - rect.top) / rect.height;    
+    const rotY = (x - 0.5) * 20;   
+    const rotX = (0.5 - y) * 12;   
     mainCard.style.transform = `rotateY(${rotY}deg) rotateX(${rotX}deg) translateY(-4px)`;
-    // Shine follows mouse
+   
     if (cardShine) {
       cardShine.style.background = `radial-gradient(circle at ${x*100}% ${y*100}%, rgba(255,255,255,0.12) 0%, transparent 60%)`;
     }
@@ -64,7 +57,7 @@ if (scene && mainCard) {
   });
 }
 
-// ---- Product cards 3D tilt ----
+
 document.querySelectorAll('.pcard').forEach(card => {
   card.addEventListener('mousemove', e => {
     const rect = card.getBoundingClientRect();
@@ -79,7 +72,7 @@ document.querySelectorAll('.pcard').forEach(card => {
   });
 });
 
-// ---- Scroll-in animations ----
+
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry, i) => {
     if (entry.isIntersecting) {
@@ -95,7 +88,7 @@ document.querySelectorAll('.pcard, .wcard, .tcard, .sec-hd, .why__lft').forEach(
   observer.observe(el);
 });
 
-// ---- Smooth anchor scroll with nav offset ----
+
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', e => {
     const href = a.getAttribute('href');
@@ -108,14 +101,14 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
   });
 });
 
-// ---- Typing animation on chat bubble (looped) ----
+
 const chatBubbles = document.querySelectorAll('.cmsg__bub');
 if (chatBubbles.length > 0) {
-  // subtle opacity pulse on last bubble
+ 
   const last = chatBubbles[chatBubbles.length - 1];
   let visible = true;
   setInterval(() => {
-    // just a gentle pulse to suggest activity
+  
     last.style.opacity = visible ? '1' : '0.7';
     visible = !visible;
   }, 2000);
